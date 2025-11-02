@@ -1,11 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:tarea1/widget/division.dart';
 import 'package:tarea1/widget/multiplicacion.dart';
 import 'package:tarea1/widget/resta.dart';
 import 'package:tarea1/widget/suma.dart';
-
-
 class Pagina extends StatefulWidget{
   const Pagina({super.key});
   @override
@@ -13,9 +10,7 @@ class Pagina extends StatefulWidget{
     return Disenio();
   }
 }
-
 class Disenio extends State<Pagina>{
-
   int _index = 0;
   @override
   Widget build(BuildContext context) {

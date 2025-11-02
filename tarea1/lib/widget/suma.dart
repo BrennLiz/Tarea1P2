@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-
 class Suma extends StatefulWidget{
   const Suma({super.key});
 
@@ -11,11 +9,9 @@ class Suma extends StatefulWidget{
     return body();
   }
 }
-
 class body extends State<Suma>{
   final n1 = TextEditingController();
   final n2 = TextEditingController();
-
 void sumar() {
     // Validamos que los campos no estén vacíos
     if (n1.text.isEmpty || n2.text.isEmpty) {
@@ -28,7 +24,7 @@ void sumar() {
     double num2 = double.parse(n2.text);
 
     double resultado = num1 + num2;
-
+    
     showDialog(
       context: context,
       builder: (_) => AlertDialog(
